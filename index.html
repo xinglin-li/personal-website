@@ -50,22 +50,70 @@
 
     <h2>Contact</h2>
     <div class="card">
-      <p>Email: <a href="mailto:li.xinglin@unc.edu">li.xinglin@unc.edu</a></p>
-    
-      <p>GitHub: 
-        <a href="https://github.com/xinglin-li" target="_blank" rel="noopener noreferrer">
-          github.com/xinglin-li
-        </a>
-      </p>
-    
-      <p>LinkedIn: 
-        <a href="https://linkedin.com/in/xinglin-li-381571139" target="_blank" rel="noopener noreferrer">
-          linkedin.com/in/xinglin-li-381571139
-        </a>
-      </p>
+      <style>
+        .social-bar {
+          display:flex;
+          gap:22px;
+          align-items:center;
+          padding:5px 0;
+        }
+        .social-item svg {
+          width:24px; height:24px; color:#111;
+          transition:opacity 0.25s ease;
+        }
+        .social-item a {
+          color:#111;
+          text-decoration:none;
+          font-size:15px;
+          margin-left:6px;
+        }
+        .social-item:hover svg { opacity:0.6; }
+        .social-item:hover a { opacity:0.7; }
+      </style>
+
+      <div class="social-bar">
+        <div class="social-item">
+          <!-- GitHub -->
+          <a href="https://github.com/xinglin-li" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A12 12 0 0 0 0 12.6c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.6 1.9 2.6 2.6 1.9.7 4.1.1 5.1-.3.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.4-5.5-6.2 0-1.3.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.3a11.3 11.3 0 0 1 6.2 0c2.3-1.6 3.3-1.3 3.3-1.3.6 1.6.2 2.9.1 3.2.8.9 1.2 2.1 1.2 3.4 0 4.8-2.8 5.9-5.5 6.2.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12.1 12.1 0 0 0 24 12.6 12 12 0 0 0 12 .5z"/></svg>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/xinglin-li-381571139" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 8.98h4v12H3v-12zm7.5 0h3.8v1.7h.1c.5-.9 1.8-1.9 3.7-1.9 3.9 0 4.6 2.6 4.6 6v6.2h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.6h-4v-12z"/></svg>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <!-- Email -->
+          <a href="mailto:li.xinglin@unc.edu">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6" /><rect x="3" y="6" width="18" height="12" rx="2" ry="2"></rect></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+      <div class="icon-link">
+        <!-- GitHub Icon -->
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 .5A12 12 0 0 0 0 12.6c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.6 1.9 2.6 2.6 1.9.7 4.1.1 5.1-.3.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.4-5.5-6.2 0-1.3.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.3a11.3 11.3 0 0 1 6.2 0c2.3-1.6 3.3-1.3 3.3-1.3.6 1.6.2 2.9.1 3.2.8.9 1.2 2.1 1.2 3.4 0 4.8-2.8 5.9-5.5 6.2.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12.1 12.1 0 0 0 24 12.6 12 12 0 0 0 12 .5z"/>
+        </svg>
+        <a href="https://github.com/xinglin-li" target="_blank" rel="noopener noreferrer">github.com/xinglin-li</a>
+      </div>
+
+      <div class="icon-link">
+        <!-- LinkedIn Icon -->
+        <svg fill="currentColor" viewBox="0 0 24 24">
+          <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 8.98h4v12H3v-12zm7.5 0h3.8v1.7h.1c.5-.9 1.8-1.9 3.7-1.9 3.9 0 4.6 2.6 4.6 6v6.2h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.6h-4v-12z"/>
+        </svg>
+        <a href="https://linkedin.com/in/xinglin-li-381571139" target="_blank" rel="noopener noreferrer">linkedin.com/in/xinglin-li-381571139</a>
+      </div>
     </div>
   </section>
 </body>
 </html>
+
 
 
