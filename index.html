@@ -5,22 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xinglin Li | Quant Research & Time Series</title>
   <style>
-        .social-bar {
-          display:flex;
-          gap:22px;
-          align-items:center;
-          padding:5px 0;
-        }
-        .social-item svg {
-          width:22px; height:22px; color:#111;
-          flex-shrink:0;
-        }
-        .social-item a {
-          color:#111;
-          text-decoration:none;
-          font-size:0px; /* hide accidental text spacing */
-        }
-      </style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background:#fafafa;
+      color:#111;
+    }
+
+    header {
+      background:#111;
+      color:#fff;
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    section {
+      max-width:900px;
+      margin:40px auto;
+      padding:0 20px;
+    }
+
+    h2 {
+      margin-top:60px;
+      margin-bottom:16px;
+    }
+
+    .card {
+      background:#fff;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom:20px;
+    }
+
+    a {
+      color:#0066cc;
+      text-decoration:none;
+    }
+
+    a:hover {
+      text-decoration:underline;
+    }
+
+    /* CONTACT ICONS – 单一版本，避免冲突 */
+    .contact-icons {
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .icon-btn {
+      width:32px;
+      height:32px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:999px;
+      background:#f2f2f2;
+      transition:opacity .2s ease;
+      overflow:hidden; /* 防止任何爆炸 */
+    }
+
+    .icon-btn:hover {
+      opacity:0.7;
+    }
+
+    .icon-btn svg {
+      width:18px;
+      height:18px;
+      display:block;
+      flex-shrink:0;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -34,22 +91,22 @@
       <p>
         I am a PhD-trained econometrician specializing in time series forecasting, mixed-frequency models,
         LASSO-MIDAS, stochastic volatility, and large-scale SAS forecasting systems. I am building
-        a next-generation quant research stack integrating econometrics + ML + RL.
+        a next-generation quant research stack integrating econometrics, machine learning, and reinforcement learning.
       </p>
     </div>
 
     <h2>Projects</h2>
     <div class="card">
       <h3>Quant Alpha Research Library</h3>
-      <p>Replicating Chen & Zimmermann's open-source factor library using Python + FinanceToolkit + SQLite.</p>
+      <p>Replicating Chen &amp; Zimmermann's open-source factor library using Python + FinanceToolkit + SQLite.</p>
     </div>
     <div class="card">
       <h3>Market Simulator v7</h3>
-      <p>Multi-asset RL-ready simulator with LOB microstructure, liquidity state machine, and CPE.</p>
+      <p>Multi-asset RL-ready simulator with limit order book microstructure and liquidity state machine.</p>
     </div>
     <div class="card">
       <h3>SAS Visual Forecasting — LGBM Node</h3>
-      <p>Custom node for multi-horizon LGBM forecasting, ADMM training, and TS feature extraction.</p>
+      <p>Custom node for multi-horizon LGBM forecasting and time-series feature extraction.</p>
     </div>
 
     <h2>Blog</h2>
@@ -59,65 +116,28 @@
 
     <h2>Contact</h2>
     <div class="card">
-      <style>
-        .social-bar {
-          display:flex;
-          gap:22px;
-          align-items:center;
-          padding:5px 0;
-        }
-        .social-item svg {
-          width:24px; height:24px; color:#111;
-          transition:opacity 0.25s ease;
-        }
-        .social-item a {
-          color:#111;
-          text-decoration:none;
-          font-size:15px;
-          margin-left:6px;
-        }
-        .social-item:hover svg { opacity:0.6; }
-        .social-item:hover a { opacity:0.7; }
-      </style>
+      <div class="contact-icons">
+        <!-- GitHub -->
+        <a class="icon-btn" href="https://github.com/xinglin-li" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 .5A12 12 0 0 0 0 12.6c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.6 1.9 2.6 2.6 1.9.7 4.1.1 5.1-.3.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.4-5.5-6.2 0-1.3.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.3a11.3 11.3 0 0 1 6.2 0c2.3-1.6 3.3-1.3 3.3-1.3.6 1.6.2 2.9.1 3.2.8.9 1.2 2.1 1.2 3.4 0 4.8-2.8 5.9-5.5 6.2.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12.1 12.1 0 0 0 24 12.6 12 12 0 0 0 12 .5z"/>
+          </svg>
+        </a>
 
-      <div class="social-bar">
-        <div class="social-item">
-          <!-- GitHub -->
-          <a href="https://github.com/xinglin-li" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A12 12 0 0 0 0 12.6c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.6 1.9 2.6 2.6 1.9.7 4.1.1 5.1-.3.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.4-5.5-6.2 0-1.3.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.3a11.3 11.3 0 0 1 6.2 0c2.3-1.6 3.3-1.3 3.3-1.3.6 1.6.2 2.9.1 3.2.8.9 1.2 2.1 1.2 3.4 0 4.8-2.8 5.9-5.5 6.2.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12.1 12.1 0 0 0 24 12.6 12 12 0 0 0 12 .5z"/></svg>
-          </a>
-        </div>
+        <!-- LinkedIn -->
+        <a class="icon-btn" href="https://linkedin.com/in/xinglin-li-381571139" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 8.98h4v12H3v-12zm7.5 0h3.8v1.7h.1c.5-.9 1.8-1.9 3.7-1.9 3.9 0 4.6 2.6 4.6 6v6.2h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.6h-4v-12z"/>
+          </svg>
+        </a>
 
-        <div class="social-item">
-          <!-- LinkedIn -->
-          <a href="https://linkedin.com/in/xinglin-li-381571139" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 8.98h4v12H3v-12zm7.5 0h3.8v1.7h.1c.5-.9 1.8-1.9 3.7-1.9 3.9 0 4.6 2.6 4.6 6v6.2h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.6h-4v-12z"/></svg>
-          </a>
-        </div>
-
-        <div class="social-item">
-          <!-- Email -->
-          <a href="mailto:li.xinglin@unc.edu">
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6" /><rect x="3" y="6" width="18" height="12" rx="2" ry="2"></rect></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-      <div class="icon-link">
-        <!-- GitHub Icon -->
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 .5A12 12 0 0 0 0 12.6c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.6 1.9 2.6 2.6 1.9.7 4.1.1 5.1-.3.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.4-5.5-6.2 0-1.3.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.3a11.3 11.3 0 0 1 6.2 0c2.3-1.6 3.3-1.3 3.3-1.3.6 1.6.2 2.9.1 3.2.8.9 1.2 2.1 1.2 3.4 0 4.8-2.8 5.9-5.5 6.2.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12.1 12.1 0 0 0 24 12.6 12 12 0 0 0 12 .5z"/>
-        </svg>
-        <a href="https://github.com/xinglin-li" target="_blank" rel="noopener noreferrer">github.com/xinglin-li</a>
-      </div>
-
-      <div class="icon-link">
-        <!-- LinkedIn Icon -->
-        <svg fill="currentColor" viewBox="0 0 24 24">
-          <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 8.98h4v12H3v-12zm7.5 0h3.8v1.7h.1c.5-.9 1.8-1.9 3.7-1.9 3.9 0 4.6 2.6 4.6 6v6.2h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.6h-4v-12z"/>
-        </svg>
-        <a href="https://linkedin.com/in/xinglin-li-381571139" target="_blank" rel="noopener noreferrer">linkedin.com/in/xinglin-li-381571139</a>
+        <!-- Email -->
+        <a class="icon-btn" href="mailto:li.xinglin@unc.edu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="6" width="18" height="12" rx="2" ry="2"></rect>
+            <path d="M3 8l9 6 9-6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
       </div>
     </div>
   </section>
